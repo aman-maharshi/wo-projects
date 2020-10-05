@@ -1,0 +1,48 @@
+.home-cta-section {
+    display: flex;
+}
+.home-cta-section a {
+    color: #fff;
+    text-decoration: none;
+}
+.home-cta__one {
+    flex: 1;
+    background-color: #706c60;
+}
+.home-cta__one--flex {
+    display: flex;
+}
+.home-cta__two {
+    flex: 1;
+    background-color: #baa798;
+}
+.home-cta__three {
+    flex: 1;
+    background-color: #b9afa7;
+}
+.home-cta__btn-one,
+.home-cta__btn-two,
+.home-cta__btn-three {
+    transition: opacity 0.5s ease;
+    padding: 0 3rem;
+}
+
+.home-cta__btn-one:hover,
+.home-cta__btn-two:hover,
+.home-cta__btn-three:hover {
+    opacity: 0.7;
+}
+.home-cta__title {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 0 0;
+}
+.home-cta__subtitle {
+    margin: 0 0 2.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.cta-arrow {
+    display: inline-block;
+    margin-left: 0.5rem;
+    transform: scale(0.9);
+}

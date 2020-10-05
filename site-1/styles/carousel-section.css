@@ -1,0 +1,94 @@
+.carousel-inner {
+    min-height: 400px;
+}
+.carousel-content-one {
+    display: flex;
+    position: relative;
+}
+.carousel-content-two {
+    display: flex;
+}
+.carousel-content-two__left {
+    margin-right: 5px;
+    position: relative;
+}
+.carousel-content-two__right {
+    margin-left: 5px;
+    position: relative;
+}
+.carousel-content-one__text {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(0, 0%, 100%, 0.93);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.3rem 5.5rem;
+}
+.carousel-content-one__text::before {
+    content: "Blog";
+    height: 18px;
+    width: 100px;
+    background: black;
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    text-transform: uppercase;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+.carousel-content-two__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0, 0%, 100%, 0.93);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.carousel-content-two__text::before {
+    height: 18px;
+    width: 150px;
+    background: black;
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    text-transform: uppercase;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+.carousel-content-two__text--left::before {
+    content: "Venues";
+}
+.carousel-content-two__text--right::before {
+    content: "Vendors";
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    transform: scale(1.5);
+}
+
+.carousel-content-one img,
+.carousel-content-two img {
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+.carousel-content-one img:hover,
+.carousel-content-two img:hover {
+    opacity: 0.7;
+}

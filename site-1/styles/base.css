@@ -1,0 +1,8 @@
+body {
+    color: #333;
+}
+.header {
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
