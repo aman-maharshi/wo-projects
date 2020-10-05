@@ -10,3 +10,18 @@ body {
 *::after {
     box-sizing: border-box;
 }
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 56px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transform: 0.3s ease;
+}
+.btn:hover {
+    background: transparent;
+    color: black;
+}

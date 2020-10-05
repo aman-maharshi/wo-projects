@@ -56,6 +56,9 @@ function Blog() {
                     </div>
                 </div>
             </div>
+            <div className="blog__cta">
+                <button className="btn">view all &rarr;</button>
+            </div>
         </section>
     )
 }

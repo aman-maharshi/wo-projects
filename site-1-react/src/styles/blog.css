@@ -47,13 +47,31 @@
     color: black;
     font-weight: 700;
 }
+.blog__cta {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
 
 @media (max-width: 768px) {
     .blog {
         padding: 0 2rem;
     }
+    .blog__left {
+        flex: 2;
+    }
+    .blog__left img {
+        width: 100%;
+    }
+    .blog__right {
+        flex: 4;
+        padding-left: 1rem;
+    }
 }
 @media (max-width: 576px) {
+    .blog__section {
+        flex-direction: column;
+    }
     .blog {
         padding: 0 1rem;
     }
