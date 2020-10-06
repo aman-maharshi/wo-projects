@@ -5,6 +5,7 @@ import Search from "./components/Search"
 import VenueTypes from "./components/VenueTypes"
 import Vendors from "./components/Vendors"
 import RealWeddings from "./components/RealWeddings"
+import Testimonials from "./components/Testimonials"
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <VenueTypes />
             <Vendors />
             <RealWeddings />
+            <Testimonials />
         </>
     )
 }
