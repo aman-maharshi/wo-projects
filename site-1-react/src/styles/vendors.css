@@ -1,0 +1,8 @@
+.vendors {
+    padding: 1rem 3rem;
+}
+.vendors__title {
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 1.25rem;
+}
