@@ -7,7 +7,7 @@
     font-size: 1.5rem;
     font-family: didot-italic;
     width: 150px;
-    margin: 10px auto;
+    margin: 0 auto 1.5rem auto;
     position: relative;
 }
 .vendors__title::before {

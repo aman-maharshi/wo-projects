@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 768px) {
+    .blog__section {
+        flex-direction: column;
+    }
     .blog {
         padding: 0 2rem;
     }
@@ -67,16 +70,20 @@
     .blog__right {
         flex: 4;
         padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 @media (max-width: 576px) {
-    .blog__section {
-        flex-direction: column;
+    .blog__desc {
+        display: none;
     }
     .blog {
         padding: 0 1rem;
     }
     .blog__header {
         font-size: 1.25rem;
+    }
+    .blog__right {
+        padding-right: 0;
     }
 }
