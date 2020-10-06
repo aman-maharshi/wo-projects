@@ -4,6 +4,7 @@ import Blog from "./components/Blog"
 import Search from "./components/Search"
 import VenueTypes from "./components/VenueTypes"
 import Vendors from "./components/Vendors"
+import RealWeddings from "./components/RealWeddings"
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Search />
             <VenueTypes />
             <Vendors />
+            <RealWeddings />
         </>
     )
 }

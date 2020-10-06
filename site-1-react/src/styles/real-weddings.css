@@ -1,0 +1,167 @@
+.real-weddings {
+    padding: 1rem 3rem;
+}
+.real-weddings__title {
+    border: 1px solid #333;
+    border-right: none;
+    border-left: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: didot-italic;
+    margin: 1rem auto 3rem auto;
+    width: 250px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.real-weddings__container {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rw__item {
+    height: 350px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+}
+.rw__photo1,
+.rw__photo5,
+.rw__photo9,
+.rw__photo13 {
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.rw__item__row2 {
+    display: flex;
+}
+.rw__photo2,
+.rw__photo3,
+.rw__photo4,
+.rw__photo6,
+.rw__photo7,
+.rw__photo8,
+.rw__photo10,
+.rw__photo11,
+.rw__photo12,
+.rw__photo14,
+.rw__photo15,
+.rw__photo16 {
+    height: 75px;
+    width: 91.5px;
+    border: 1px solid white;
+}
+
+.rw__item__title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.rw__item__subtitle {
+    font-size: 1rem;
+    margin-top: 0;
+    color: gray;
+    padding-left: 5px;
+}
+
+.rw__cta {
+    margin: 2rem 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .real-weddings {
+        padding: 1rem 2rem;
+    }
+    .rw__item {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 576px) {
+    .real-weddings {
+        padding: 1rem;
+    }
+    .rw__item {
+        margin-bottom: 1rem;
+    }
+}
+
+/*
+    IMAGE AND HOVER EFFECTS
+*/
+.rw__photo-box {
+    overflow: hidden;
+    display: block;
+}
+.rw__photo1,
+.rw__photo5,
+.rw__photo9,
+.rw__photo13 {
+    background: linen url(../images/rw-1.jpeg) no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+.rw__photo2,
+.rw__photo6,
+.rw__photo10,
+.rw__photo14 {
+    background: linen url(../images/rw-2.jpeg) no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+.rw__photo3,
+.rw__photo7,
+.rw__photo11,
+.rw__photo15 {
+    background: linen url(../images/rw-3.jpeg) no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+.rw__photo4,
+.rw__photo8,
+.rw__photo12,
+.rw__photo16 {
+    background: linen url(../images/rw-4.jpeg) no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+    filter: brightness(60%);
+}
+
+.rw__photo1:hover,
+.rw__photo2:hover,
+.rw__photo3:hover,
+.rw__photo5:hover,
+.rw__photo6:hover,
+.rw__photo7:hover,
+.rw__photo9:hover,
+.rw__photo10:hover,
+.rw__photo11:hover,
+.rw__photo13:hover,
+.rw__photo14:hover,
+.rw__photo15:hover {
+    transform: scale(1.2);
+}
+/*
+    IMAGE COUNT INDICATOR
+*/
+.rw__photo-count {
+    display: block;
+    position: relative;
+}
+.rw__photo-count__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rw__photo-count__box span {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
