@@ -1,4 +1,5 @@
 @import "./base.css";
-@import "./home-cta-section.css";
+@import "./home-cta.css";
 @import "./blog.css";
-@import "./search-section.css";
+@import "./search.css";
+@import "./venue-types.css";

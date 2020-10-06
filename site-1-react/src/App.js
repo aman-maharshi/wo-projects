@@ -2,6 +2,7 @@ import React from "react"
 import HomeCta from "./components/HomeCta"
 import Blog from "./components/Blog"
 import Search from "./components/Search"
+import VenueTypes from "./components/VenueTypes"
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <HomeCta />
             <Blog />
             <Search />
+            <VenueTypes />
         </>
     )
 }
