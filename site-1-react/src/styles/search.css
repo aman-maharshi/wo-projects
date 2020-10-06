@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    background: linen;
 }
 .search__field {
     border: 1px solid lightgray;
