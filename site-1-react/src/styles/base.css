@@ -1,8 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+@font-face {
+    font-family: didot-italic;
+    src: url("../fonts/DidotLTStd-Italic.otf");
+}
+
+@font-face {
+    font-family: didot-regular;
+    src: url("../fonts/Didot\ Regular.ttf");
+}
 
 body {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: didot-regular, sans-serif;
 }
 
 *,
@@ -12,16 +22,24 @@ body {
 }
 
 .btn {
-    background: black;
-    color: white;
     border: none;
-    padding: 8px 56px;
-    border: 2px solid black;
-    font-size: 1.1rem;
     cursor: pointer;
     transform: 0.3s ease;
 }
-.btn:hover {
+.btn-black {
+    background: black;
+    color: white;
+    padding: 8px 56px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+}
+.btn-black:hover {
     background: transparent;
+    color: black;
+}
+.btn-yellow {
+    background-color: #f9d982;
+    padding: 17px 20px;
+    font-weight: 600;
     color: black;
 }

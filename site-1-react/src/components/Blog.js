@@ -57,7 +57,7 @@ function Blog() {
                 </div>
             </div>
             <div className="blog__cta">
-                <button className="btn">view all &rarr;</button>
+                <button className="btn btn-black">view all &rarr;</button>
             </div>
         </section>
     )
