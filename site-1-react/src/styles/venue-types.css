@@ -134,7 +134,7 @@
 }
 .venue__row-2-right-col {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .venue__links {
     display: flex;

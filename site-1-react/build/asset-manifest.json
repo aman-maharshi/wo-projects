@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.904b0b59.chunk.css",
-    "main.js": "./static/js/main.55071418.chunk.js",
-    "main.js.map": "./static/js/main.55071418.chunk.js.map",
+    "main.css": "./static/css/main.2773e264.chunk.css",
+    "main.js": "./static/js/main.8b7fdd1c.chunk.js",
+    "main.js.map": "./static/js/main.8b7fdd1c.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fb37dbac.js",
     "runtime-main.js.map": "./static/js/runtime-main.fb37dbac.js.map",
     "static/js/2.79923c74.chunk.js": "./static/js/2.79923c74.chunk.js",
     "static/js/2.79923c74.chunk.js.map": "./static/js/2.79923c74.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a6dd226f3260061ab4cf616bd1dbedad.js": "./precache-manifest.a6dd226f3260061ab4cf616bd1dbedad.js",
+    "precache-manifest.8aa9551cca30e10d99bf87d7b5cbf461.js": "./precache-manifest.8aa9551cca30e10d99bf87d7b5cbf461.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.904b0b59.chunk.css.map": "./static/css/main.904b0b59.chunk.css.map",
+    "static/css/main.2773e264.chunk.css.map": "./static/css/main.2773e264.chunk.css.map",
     "static/js/2.79923c74.chunk.js.LICENSE.txt": "./static/js/2.79923c74.chunk.js.LICENSE.txt",
     "static/media/main.css": "./static/media/venue-4.3e0f9e37.jpg",
     "static/media/blog3.jpeg": "./static/media/blog3.ea7676cd.jpeg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.fb37dbac.js",
     "static/js/2.79923c74.chunk.js",
-    "static/css/main.904b0b59.chunk.css",
-    "static/js/main.55071418.chunk.js"
+    "static/css/main.2773e264.chunk.css",
+    "static/js/main.8b7fdd1c.chunk.js"
   ]
 }
