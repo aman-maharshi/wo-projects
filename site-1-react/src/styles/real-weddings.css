@@ -73,22 +73,6 @@
     margin: 2rem 0;
     text-align: center;
 }
-@media (max-width: 768px) {
-    .real-weddings {
-        padding: 1rem 2rem;
-    }
-    .rw__item {
-        margin-bottom: 2rem;
-    }
-}
-@media (max-width: 576px) {
-    .real-weddings {
-        padding: 1rem;
-    }
-    .rw__item {
-        margin-bottom: 1rem;
-    }
-}
 
 /*
     IMAGE AND HOVER EFFECTS
@@ -164,4 +148,36 @@
     color: white;
     text-align: center;
     font-family: "Roboto", sans-serif;
+}
+
+/*
+    MEDIA QUERIES
+*/
+
+@media (max-width: 768px) {
+    .real-weddings {
+        padding: 1rem 2rem;
+    }
+    .rw__item {
+        margin-bottom: 2rem;
+        height: 325px;
+    }
+    .rw__cta {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 576px) {
+    .real-weddings {
+        padding: 1rem;
+    }
+    .rw__item {
+        margin-bottom: 1rem;
+    }
+    .rw__cta {
+        margin-top: 10px;
+    }
+    .rw__item__title,
+    .rw__item__subtitle {
+        text-align: center;
+    }
 }
