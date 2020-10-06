@@ -31,11 +31,11 @@
     width: 600px;
 }
 .venue-1 {
-    background: url(../images/venue-1.jpeg) no-repeat center;
+    background: url(../images/venue-1.jpg) no-repeat center;
     background-size: cover;
 }
 .venue-2 {
-    background: url(../images/venue-2.jpeg) no-repeat center;
+    background: url(../images/venue-2.jpg) no-repeat center;
     background-size: cover;
 }
 .tile-name {
@@ -109,11 +109,11 @@
     color: #333;
 }
 .venue-3 {
-    background: url(../images/venue-3.jpeg) no-repeat center;
+    background: url(../images/venue-3.jpg) no-repeat center;
     background-size: cover;
 }
 .venue-4 {
-    background: url(../images/venue-4.jpeg) no-repeat center;
+    background: url(../images/venue-4.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -146,6 +146,13 @@
     margin: 5px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    text-transform: lowercase;
+    text-align: center;
+}
+.venue__links a.venue__links__cta {
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 @media (max-width: 768px) {
     .venue__row-2 {
@@ -168,4 +175,32 @@
     .venue__tile-25 {
         margin-bottom: 1rem;
     }
+}
+
+/*
+    HOVER EFFECTS
+*/
+.venue-1:hover,
+.venue-2:hover,
+.venue-3:hover,
+.venue-4:hover {
+    transition: 0.3s ease;
+}
+.venue-1:hover,
+.venue-2:hover,
+.venue-3:hover,
+.venue-4:hover {
+    opacity: 0.8;
+}
+
+.venue-1:hover .tile-name,
+.venue-2:hover .tile-name,
+.venue-3:hover .tile-name,
+.venue-4:hover .tile-name {
+    background: linen;
+    opacity: 1;
+}
+
+.venue__links a:hover {
+    color: rgb(180, 135, 75);
 }

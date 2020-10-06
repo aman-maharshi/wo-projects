@@ -26,18 +26,24 @@ function VenueTypes() {
                     <p className="venue__row-2-right-title">Destination Weddings</p>
                     <div className="venue__row-2-right-col">
                         <div className="venue__links">
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Lorem / ipsuming.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Lorem / ipsuming.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Loremers / ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
                         </div>
                         <div className="venue__links">
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
-                            <a href="/">Lorem, ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Loremers / ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/">Loremings / ipsum.</a>
+                            <a href="/">Lorem / ipsum.</a>
+                            <a href="/" className="venue__links__cta">
+                                view all &rarr;
+                            </a>
                         </div>
                     </div>
                 </div>
