@@ -31,11 +31,11 @@
     width: 600px;
 }
 .venue-1 {
-    background: url(../images/venue-1.jpg) no-repeat center;
+    background: linen url(../images/venue-1.jpg) no-repeat center;
     background-size: cover;
 }
 .venue-2 {
-    background: url(../images/venue-2.jpg) no-repeat center;
+    background: linen url(../images/venue-2.jpg) no-repeat center;
     background-size: cover;
 }
 .tile-name {
@@ -109,11 +109,11 @@
     color: #333;
 }
 .venue-3 {
-    background: url(../images/venue-3.jpg) no-repeat center;
+    background: linen url(../images/venue-3.jpg) no-repeat center;
     background-size: cover;
 }
 .venue-4 {
-    background: url(../images/venue-4.jpg) no-repeat center;
+    background: linen url(../images/venue-4.jpg) no-repeat center;
     background-size: cover;
 }
 
