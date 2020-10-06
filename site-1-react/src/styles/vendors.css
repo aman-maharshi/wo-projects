@@ -66,6 +66,7 @@
     height: 100%;
     width: 100%;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .vendor2,
 .vendor4,
@@ -84,8 +85,35 @@
     background: url(../images/vendor-3.jpg) no-repeat center;
     background-size: cover;
 }
+.vendors__item__content4 {
+    background: url(../images/vendor-4.jpg) no-repeat center;
+    background-size: cover;
+}
+.vendors__item__content5 {
+    background: url(../images/vendor-5.jpg) no-repeat center;
+    background-size: cover;
+}
+.vendors__item__content6 {
+    background: url(../images/vendor-6.jpg) no-repeat center;
+    background-size: cover;
+}
+.vendors__item__content7 {
+    background: url(../images/vendor-7.jpg) no-repeat center;
+    background-size: cover;
+}
+.vendors__item__content8 {
+    background: url(../images/vendor-8.jpg) no-repeat center;
+    background-size: cover;
+}
+.vendors__item__content9 {
+    background: url(../images/vendor-9.jpg) no-repeat center;
+    background-size: cover;
+}
 
 @media (max-width: 768px) {
+    .vendors {
+        padding: 1rem 2rem;
+    }
     .vendor2,
     .vendor4 {
         width: 300px;
@@ -93,4 +121,33 @@
     .vendor9 {
         width: 600px;
     }
+}
+
+@media (max-width: 576px) {
+    .vendors {
+        padding: 1rem;
+    }
+    .vendors__item {
+        width: 100%;
+    }
+}
+
+/*
+    HOVER EFFECT
+*/
+
+.vendors__item__content:hover {
+    opacity: 0.8;
+}
+.vendors__item__content1:hover + .vendors__item__title,
+.vendors__item__content2:hover + .vendors__item__title,
+.vendors__item__content3:hover + .vendors__item__title,
+.vendors__item__content4:hover + .vendors__item__title,
+.vendors__item__content5:hover + .vendors__item__title,
+.vendors__item__content6:hover + .vendors__item__title,
+.vendors__item__content7:hover + .vendors__item__title,
+.vendors__item__content8:hover + .vendors__item__title,
+.vendors__item__content9:hover + .vendors__item__title {
+    background: linen;
+    opacity: 1;
 }

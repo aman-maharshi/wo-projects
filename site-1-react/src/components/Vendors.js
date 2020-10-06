@@ -25,37 +25,37 @@ function Vendors() {
                 </div>
                 <div className="vendors__item vendor4">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content4"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
                 <div className="vendors__item vendor5">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content5"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
                 <div className="vendors__item vendor6">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content6"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
                 <div className="vendors__item vendor7">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content7"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
                 <div className="vendors__item vendor8">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content8"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
                 <div className="vendors__item vendor9">
                     <a href="/">
-                        <div className="vendors__item__content"></div>
+                        <div className="vendors__item__content vendors__item__content9"></div>
                         <div className="vendors__item__title">Vendor</div>
                     </a>
                 </div>
