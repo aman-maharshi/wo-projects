@@ -8,7 +8,7 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/wo-projects/site-1-react/build/" exact>
+                <Route path="/" exact>
                     <App />
                 </Route>
                 <Route path="/real-weddings">
