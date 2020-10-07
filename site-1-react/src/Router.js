@@ -1,12 +1,12 @@
 import React from "react"
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { HashRouter, Switch, Route } from "react-router-dom"
 import App from "./App"
 import RealWeddingsPage from "./components/RealWeddingsPage"
 import NotFoundPage from "./components/NotFoundPage"
 
 function Router() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route path="/" exact>
                     <App />
@@ -18,7 +18,7 @@ function Router() {
                     <NotFoundPage />
                 </Route>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
