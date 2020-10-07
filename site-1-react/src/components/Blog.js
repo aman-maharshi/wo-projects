@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function Blog() {
     return (
@@ -57,7 +58,9 @@ function Blog() {
                 </div>
             </div>
             <div className="blog__cta">
-                <button className="btn btn-black">view all &rarr;</button>
+                <Link to="/blog" className="btn btn-black">
+                    view all &rarr;
+                </Link>
             </div>
         </section>
     )
