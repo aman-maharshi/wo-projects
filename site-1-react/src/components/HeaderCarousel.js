@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel"
 function HeaderCarousel() {
     return (
         <section className="header-carousel">
-            <Carousel>
+            <Carousel showThumbs={false}>
                 <a href="/#" className="hc-one">
                     <div className="hc-one__content">Lorem ipsum dolor sit.</div>
                 </a>

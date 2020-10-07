@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function RealWeddings() {
     return (
@@ -111,7 +112,9 @@ function RealWeddings() {
                 </div>
             </div>
             <div className="rw__cta">
-                <button className="btn btn-black">view all &rarr;</button>
+                <Link to="/real-weddings" className="btn btn-black">
+                    view all &rarr;
+                </Link>
             </div>
         </section>
     )

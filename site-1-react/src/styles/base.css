@@ -21,10 +21,16 @@ body {
     box-sizing: border-box;
 }
 
+/*
+    BUTTONS 
+*/
+
 .btn {
     border: none;
     cursor: pointer;
     transform: 0.3s ease;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
 }
 .btn-black {
     background: black;

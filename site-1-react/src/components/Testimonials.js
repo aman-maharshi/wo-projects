@@ -1,54 +1,54 @@
 import React from "react"
 import styled from "styled-components"
 
-function Testimonials() {
-    const Section = styled.div`
-        padding: 1rem 3rem 3rem 2rem;
-        background: linen;
-        font-family: "Roboto", sans-serif;
-    `
-    const Title = styled.p`
-        border: 1px solid #333;
-        border-right: none;
-        border-left: none;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-family: didot-italic;
-        margin: 1rem auto 2.5rem auto;
-        width: 300px;
-        text-align: center;
-        padding-top: 10px;
-    `
-    const Row = styled.div`
-        max-width: 1230px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-evenly;
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-        }
-    `
-    const Column = styled.div`
-        width: 320px;
-        display: flex;
+const Section = styled.div`
+    padding: 1rem 3rem 3rem 2rem;
+    background: linen;
+    font-family: "Roboto", sans-serif;
+`
+const Title = styled.p`
+    border: 1px solid #333;
+    border-right: none;
+    border-left: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: didot-italic;
+    margin: 1rem auto 2.5rem auto;
+    width: 300px;
+    text-align: center;
+    padding-top: 10px;
+`
+const Row = styled.div`
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: 768px) {
         flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-        padding: 0 10px;
-        @media (max-width: 768px) {
-            margin-bottom: 1rem;
-        }
-    `
-    const Review = styled.p`
-        font-size: 14px;
-        line-height: 1.5;
-    `
-    const Author = styled.p`
-        font-weight: bold;
-        margin-top: 0;
-    `
+        align-items: center;
+    }
+`
+const Column = styled.div`
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+        margin-bottom: 1rem;
+    }
+`
+const Review = styled.p`
+    font-size: 14px;
+    line-height: 1.5;
+`
+const Author = styled.p`
+    font-weight: bold;
+    margin-top: 0;
+`
 
+function Testimonials() {
     return (
         <Section>
             <Title>Meet Our Customers</Title>
