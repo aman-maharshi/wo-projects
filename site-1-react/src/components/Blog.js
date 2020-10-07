@@ -13,7 +13,7 @@ function Blog() {
                         <div className="blog__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
                         <div className="blog__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus sit vitae laboriosam praesentium aliquam ea mollitia incidunt? Officia, aspernatur.</div>
                         <div className="blog__btn">
-                            <a href="/">read more &rarr;</a>
+                            <a href="/#">read more &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ function Blog() {
                         <div className="blog__title">Lorem ipsum dolor sit amet.</div>
                         <div className="blog__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus sit vitae laboriosam praesentium aliquam ea mollitia incidunt? Officia, aspernatur.</div>
                         <div className="blog__btn">
-                            <a href="/">read more &rarr;</a>
+                            <a href="/#">read more &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ function Blog() {
                         <div className="blog__title">Lorem ipsum dolor sit amet.</div>
                         <div className="blog__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus sit vitae laboriosam praesentium aliquam ea mollitia incidunt? Officia, aspernatur.</div>
                         <div className="blog__btn">
-                            <a href="/">read more &rarr;</a>
+                            <a href="/#">read more &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function Blog() {
                         <div className="blog__title">Lorem ipsum dolor sit amet.</div>
                         <div className="blog__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis natus sit vitae laboriosam praesentium aliquam ea mollitia incidunt? Officia, aspernatur.</div>
                         <div className="blog__btn">
-                            <a href="/">read more &rarr;</a>
+                            <a href="/#">read more &rarr;</a>
                         </div>
                     </div>
                 </div>

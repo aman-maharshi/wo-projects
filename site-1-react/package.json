@@ -9,7 +9,7 @@
         "@testing-library/user-event": "^7.2.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-elastic-carousel": "^0.8.1",
+        "react-responsive-carousel": "^3.2.10",
         "react-scripts": "3.4.3",
         "styled-components": "^5.2.0"
     },

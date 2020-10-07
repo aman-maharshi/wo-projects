@@ -6,10 +6,12 @@ import VenueTypes from "./components/VenueTypes"
 import Vendors from "./components/Vendors"
 import RealWeddings from "./components/RealWeddings"
 import Testimonials from "./components/Testimonials"
+import HeaderCarousel from "./components/HeaderCarousel"
 
 function App() {
     return (
         <>
+            <HeaderCarousel />
             <HomeCta />
             <Blog />
             <Search />

@@ -7,18 +7,18 @@ function RealWeddings() {
             <div className="real-weddings__container">
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo1"></div>
                         </a>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo2"></div>
                         </a>
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo3"></div>
                         </a>
-                        <a href="/" className="rw__photo-box rw__photo-count">
+                        <a href="/#" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo4"></div>
                             <div className="rw__photo-count__box">
                                 <span>26</span>
@@ -33,18 +33,18 @@ function RealWeddings() {
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo5"></div>
                         </a>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo6"></div>
                         </a>
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo7"></div>
                         </a>
-                        <a href="/" className="rw__photo-box rw__photo-count">
+                        <a href="/#" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo8"></div>
                             <div className="rw__photo-count__box">
                                 <span>18</span>
@@ -59,18 +59,18 @@ function RealWeddings() {
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo9"></div>
                         </a>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo10"></div>
                         </a>
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo11"></div>
                         </a>
-                        <a href="/" className="rw__photo-box rw__photo-count">
+                        <a href="/#" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo12"></div>
                             <div className="rw__photo-count__box">
                                 <span>33</span>
@@ -85,18 +85,18 @@ function RealWeddings() {
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo13"></div>
                         </a>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo14"></div>
                         </a>
-                        <a href="/" className="rw__photo-box">
+                        <a href="/#" className="rw__photo-box">
                             <div className="rw__photo15"></div>
                         </a>
-                        <a href="/" className="rw__photo-box rw__photo-count">
+                        <a href="/#" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo16"></div>
                             <div className="rw__photo-count__box">
                                 <span>12</span>

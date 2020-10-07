@@ -1,0 +1,200 @@
+.hc-one {
+    height: 100%;
+    background: linen url("../images/carousel-image-1.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+    text-transform: none;
+    color: black;
+}
+
+.hc-two {
+    display: flex;
+    height: 100%;
+}
+.hc-two__left {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    margin-right: 2px;
+    background: linen url("../images/carousel-image-2.jpg") no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+    text-transform: none;
+    color: black;
+}
+.hc-two__right {
+    margin-left: 2px;
+    width: 50%;
+    position: relative;
+    height: 100%;
+    background: linen url("../images/carousel-image-3.jpg") no-repeat center;
+    background-size: cover;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+    text-transform: none;
+    color: black;
+}
+
+.hc-one__content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(0, 0%, 100%, 0.93);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.3rem 5.5rem;
+}
+.hc-one__content::before {
+    content: "Blog";
+    height: 18px;
+    width: 100px;
+    background: black;
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    text-transform: uppercase;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.hc-two__left__content,
+.hc-two__right__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0, 0%, 100%, 0.93);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.hc-two__left__content::before,
+.hc-two__right__content::before {
+    height: 18px;
+    width: 150px;
+    background: black;
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    text-transform: uppercase;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.hc-two__left__content::before {
+    content: "Venues";
+}
+.hc-two__right__content::before {
+    content: "Vendors";
+}
+
+/*
+    Carousel Library Specific Styling
+----------------------------------------*/
+.carousel .slide {
+    background: white;
+    height: 400px;
+}
+.carousel .carousel-status {
+    display: none;
+}
+.carousel .thumbs-wrapper {
+    display: none;
+}
+.carousel.carousel-slider .control-arrow {
+    width: 80px;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 15px solid #fff;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 15px solid #fff;
+}
+.carousel .control-dots {
+    display: none;
+}
+
+/*
+    Hover Effects
+*/
+.hc-one:hover {
+    opacity: 0.8;
+}
+.hc-one:hover .hc-one__content {
+    color: rgb(138, 84, 31);
+}
+.hc-two__left:hover,
+.hc-two__right:hover {
+    opacity: 0.8;
+}
+.hc-two__left:hover .hc-two__left__content,
+.hc-two__right:hover .hc-two__right__content {
+    color: rgb(138, 84, 31);
+}
+
+/*
+    Media Queries
+*/
+@media (max-width: 768px) {
+    .carousel .slide {
+        height: 300px;
+    }
+    .hc-two__left {
+        width: 100%;
+        margin: 0;
+    }
+    .hc-two__right {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .carousel .slide {
+        height: 200px;
+    }
+    .hc-one__content {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .hc-one__content::before {
+        line-height: 1.2;
+        height: 13px;
+        font-size: 0.7rem;
+        width: 75px;
+    }
+    .hc-two__left__content,
+    .hc-two__right__content {
+        font-size: 1rem;
+        height: 50px;
+        font-size: 13px;
+    }
+    .hc-two__left__content::before,
+    .hc-two__right__content::before {
+        font-size: 0.7rem;
+        width: 75px;
+        height: 13px;
+        line-height: 1.2;
+    }
+}
