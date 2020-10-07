@@ -18,6 +18,10 @@ const MainContainer = styled.div`
     max-width: 1230px;
     margin: 1rem auto;
 `
+/* 
+    BANNER AREA
+*/
+
 const Banner = styled.div`
     height: 250px;
     width: 100%;
@@ -78,6 +82,77 @@ const BannerTextSubtitle = styled.p`
         font-size: 0.7rem;
     }
 `
+/*
+    OPTIONS AREA
+*/
+
+const Options = styled.div`
+    display: flex;
+    padding: 2rem 0;
+    box-shadow: 0 8px 6px -6px lightgray;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+`
+const OptionsLocation = styled.div`
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ababab;
+    padding-left: 10rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding-left: 0;
+    }
+
+    .location-select {
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid lightgray;
+        padding: 5px 10px;
+        margin-left: 1rem;
+        width: 300px;
+        outline: none;
+
+        @media (max-width: 768px) {
+            width: auto;
+        }
+
+        &:hover {
+            border-color: gray;
+        }
+    }
+`
+const OptionsSort = styled.div`
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #ababab;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+        padding-top: 5px;
+    }
+
+    @media (max-width: 576px) {
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .sort-link {
+        text-decoration: none;
+        color: #ababab;
+        padding: 0 10px;
+    }
+    .sort-link.active {
+        color: black;
+    }
+`
 
 function RealWeddingsPage() {
     return (
@@ -89,6 +164,24 @@ function RealWeddingsPage() {
                         <BannerTextSubtitle>Lorem ipsum dolor sit amet, consectetur adipisicing.</BannerTextSubtitle>
                     </BannerText>
                 </Banner>
+                <Options>
+                    <OptionsLocation>
+                        By Location:
+                        <select name="location-select" className="location-select">
+                            <option value="all">All Locations</option>
+                        </select>
+                    </OptionsLocation>
+                    <OptionsSort>
+                        Sort:
+                        <a className="sort-link" href="/#">
+                            Popular
+                        </a>{" "}
+                        |{" "}
+                        <a className="sort-link active" href="/#">
+                            Recent
+                        </a>
+                    </OptionsSort>
+                </Options>
             </MainContainer>
         </Section>
     )
