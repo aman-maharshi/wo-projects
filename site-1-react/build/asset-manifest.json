@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.a523746c.chunk.css",
-    "main.js": "./static/js/main.6c368a22.chunk.js",
-    "main.js.map": "./static/js/main.6c368a22.chunk.js.map",
+    "main.js": "./static/js/main.e68d4846.chunk.js",
+    "main.js.map": "./static/js/main.e68d4846.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fb37dbac.js",
     "runtime-main.js.map": "./static/js/runtime-main.fb37dbac.js.map",
     "static/css/2.fb346933.chunk.css": "./static/css/2.fb346933.chunk.css",
-    "static/js/2.2bc6b036.chunk.js": "./static/js/2.2bc6b036.chunk.js",
-    "static/js/2.2bc6b036.chunk.js.map": "./static/js/2.2bc6b036.chunk.js.map",
+    "static/js/2.5121debf.chunk.js": "./static/js/2.5121debf.chunk.js",
+    "static/js/2.5121debf.chunk.js.map": "./static/js/2.5121debf.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.0b0b6850bc21405ef1d9be984e8c1a8e.js": "./precache-manifest.0b0b6850bc21405ef1d9be984e8c1a8e.js",
+    "precache-manifest.13f2fca78345d41cafdb081e262d546c.js": "./precache-manifest.13f2fca78345d41cafdb081e262d546c.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "./static/css/2.fb346933.chunk.css.map",
     "static/css/main.a523746c.chunk.css.map": "./static/css/main.a523746c.chunk.css.map",
-    "static/js/2.2bc6b036.chunk.js.LICENSE.txt": "./static/js/2.2bc6b036.chunk.js.LICENSE.txt",
+    "static/js/2.5121debf.chunk.js.LICENSE.txt": "./static/js/2.5121debf.chunk.js.LICENSE.txt",
     "static/media/main.css": "./static/media/venue-4.3e0f9e37.jpg",
     "static/media/blog3.jpeg": "./static/media/blog3.ea7676cd.jpeg",
-    "static/media/rw-banner.jpeg": "./static/media/rw-banner.5683fbb7.jpeg",
+    "static/media/rw-banner.jpeg": "./static/media/rw-banner.6d19146f.jpeg",
     "static/media/testimonials1.png": "./static/media/testimonials1.830ad66e.png",
     "static/media/testimonials2.png": "./static/media/testimonials2.b191a2ee.png",
     "static/media/testimonials3.png": "./static/media/testimonials3.93f603a0.png"
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.fb37dbac.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.2bc6b036.chunk.js",
+    "static/js/2.5121debf.chunk.js",
     "static/css/main.a523746c.chunk.css",
-    "static/js/main.6c368a22.chunk.js"
+    "static/js/main.e68d4846.chunk.js"
   ]
 }
