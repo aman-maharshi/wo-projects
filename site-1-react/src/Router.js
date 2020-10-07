@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import App from "./App"
 import RealWeddingsPage from "./components/RealWeddingsPage"
-/* import NotFoundPage from "./components/NotFoundPage" */
+import NotFoundPage from "./components/NotFoundPage"
 
 function Router() {
     return (
@@ -14,11 +14,9 @@ function Router() {
                 <Route path="/real-weddings">
                     <RealWeddingsPage />
                 </Route>
-                {/*
                 <Route>
                     <NotFoundPage />
                 </Route>
-                */}
             </Switch>
         </BrowserRouter>
     )
