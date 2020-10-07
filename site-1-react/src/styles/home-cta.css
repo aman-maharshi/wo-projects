@@ -9,13 +9,15 @@
     flex: 1;
     display: flex;
 }
+.home-cta__btn {
+    text-decoration: none;
+    padding: 0 3rem;
+}
 .home-cta__btn,
 .home-cta__btn:hover {
     width: 100%;
     color: white;
-    text-decoration: none;
     transition: opacity 0.5s ease;
-    padding: 0 3rem;
 }
 .home-cta__btn--one {
     background-color: #706c60;
@@ -40,21 +42,25 @@
 .home-cta__subtitle {
     margin: 0 0 2.5rem 0;
     font-size: 0.9rem;
-    font-weight: 100;
+    font-weight: 200;
     display: block;
+    font-family: "Roboto", sans-serif;
 }
 .cta-arrow {
     display: inline-block;
     margin-left: 0.5rem;
-    transform: scale(0.9);
 }
 
 @media (max-width: 768px) {
     .home-cta__btn {
-        padding: 0 2rem;
+        padding: 0 1.75rem;
     }
     .home-cta__title {
         font-size: 1.25rem;
+        margin-top: 2rem;
+    }
+    .home-cta__subtitle {
+        margin-bottom: 1.75rem;
     }
 }
 
