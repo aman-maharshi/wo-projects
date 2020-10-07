@@ -121,9 +121,21 @@
     .vendor9 {
         width: 600px;
     }
+    .vendors__title::before {
+        width: 200px;
+    }
+    .vendors__title::after {
+        width: 200px;
+    }
 }
 
 @media (max-width: 576px) {
+    .vendors__title::before {
+        width: 100px;
+    }
+    .vendors__title::after {
+        width: 100px;
+    }
     .vendors {
         padding: 1rem;
     }

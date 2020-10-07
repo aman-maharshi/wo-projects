@@ -160,7 +160,10 @@
 */
 @media (max-width: 768px) {
     .carousel .slide {
-        height: 300px;
+        height: 320px;
+    }
+    .hc-one__content {
+        font-size: 1.1rem;
     }
     .hc-two__left {
         width: 100%;
@@ -172,7 +175,7 @@
 }
 @media (max-width: 576px) {
     .carousel .slide {
-        height: 200px;
+        height: 250px;
     }
     .hc-one__content {
         font-size: 13px;
