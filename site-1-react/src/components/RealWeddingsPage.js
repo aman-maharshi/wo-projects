@@ -193,13 +193,13 @@ function RealWeddingsPage() {
                     </OptionsSort>
                 </Options>
                 <Gallery>
-                    <RealWeddingsItem image1={data.rw1.images.image1} image2={data.rw1.images.image2} image3={data.rw1.images.image3} image4={data.rw1.images.image4} count={26} name={data.rw1.name} place={data.rw1.place} id={"rw1"} />
+                    <RealWeddingsItem image1={data.rw1.images.image1} image2={data.rw1.images.image2} image3={data.rw1.images.image3} image4={data.rw1.images.image4} count={data.rw1.totalImages} name={data.rw1.name} place={data.rw1.place} id={"rw1"} />
 
-                    <RealWeddingsItem image1={data.rw2.images.image1} image2={data.rw2.images.image2} image3={data.rw2.images.image3} image4={data.rw2.images.image4} count={18} name={data.rw2.name} place={data.rw2.place} id={"rw2"}/>
+                    <RealWeddingsItem image1={data.rw2.images.image1} image2={data.rw2.images.image2} image3={data.rw2.images.image3} image4={data.rw2.images.image4} count={data.rw2.totalImages} name={data.rw2.name} place={data.rw2.place} id={"rw2"}/>
 
-                    <RealWeddingsItem image1={data.rw3.images.image1} image2={data.rw3.images.image2} image3={data.rw3.images.image3} image4={data.rw3.images.image4} count={33} name={"Title Three"} place={"Lorem, ipsum"} id={"rw3"}/>
+                    <RealWeddingsItem image1={data.rw3.images.image1} image2={data.rw3.images.image2} image3={data.rw3.images.image3} image4={data.rw3.images.image4} count={data.rw3.totalImages} name={"Title Three"} place={"Lorem, ipsum"} id={"rw3"}/>
 
-                    <RealWeddingsItem image1={data.rw4.images.image1} image2={data.rw4.images.image2} image3={data.rw4.images.image3} image4={data.rw4.images.image4} count={12} name={"Title Four"} place={"Lorem, ipsum"} id={"rw4"}/>
+                    <RealWeddingsItem image1={data.rw4.images.image1} image2={data.rw4.images.image2} image3={data.rw4.images.image3} image4={data.rw4.images.image4} count={data.rw4.totalImages} name={"Title Four"} place={"Lorem, ipsum"} id={"rw4"}/>
                 </Gallery>
             </MainContainer>
         </Section>

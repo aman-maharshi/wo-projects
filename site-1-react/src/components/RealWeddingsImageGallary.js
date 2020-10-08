@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { useParams } from "react-router-dom"
 import { data } from "./RealWeddingsData"
@@ -65,10 +65,41 @@ const GallaryItemSmall = styled.div`
         }
     }
 `
+const LoadMoreBtn = styled.button`
+    border: none;
+    color: gray;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    text-transform: uppercase;
+    outline: none;
+`
+
+const NewGallaryContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1230px;
+    margin: 0 auto;
+`
 
 function RealWeddingsImageGallary(props) {
     const { id } = useParams()
-    const { image1, image2, image3, image4 } = data[id].images
+    const { image1, image2, image3, image4, image5, image6, image7 } = data[id].images
+
+    const [showMoreImages, setShowMoreImages] = useState(false)
+
+    function handleLoadMore() {
+        if (document.querySelector(".new-gallary-container")) {
+            document.querySelector(".new-gallary-container").classList.add("show-more-photos")
+            setShowMoreImages(true)
+        }
+    }
+
+    function handleLoadLess() {
+        document.querySelector(".new-gallary-container").classList.remove("show-more-photos")
+        setShowMoreImages(false)
+    }
 
     return (
         <Section>
@@ -100,7 +131,34 @@ function RealWeddingsImageGallary(props) {
                     </a>
                 </GallaryItemSmall>
             </GallaryContainer>
-            
+
+            {/*
+
+            {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn>}
+
+            {image7 ? (
+                <NewGallaryContainer className="new-gallary-container">
+                    <GallaryItemSmall>
+                        <a href="/#">
+                            <img src={image5} alt="abc" />
+                        </a>
+                    </GallaryItemSmall>
+                    <GallaryItemSmall>
+                        <a href="/#">
+                            <img src={image6} alt="abc" />
+                        </a>
+                    </GallaryItemSmall>
+                    <GallaryItemSmall>
+                        <a href="/#">
+                            <img src={image7} alt="abc" />
+                        </a>
+                    </GallaryItemSmall>
+                </NewGallaryContainer>
+            ) : (
+                ""
+            )
+
+            */}
         </Section>
     )
 }

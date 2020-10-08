@@ -1,0 +1,8 @@
+.new-gallary-container {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.show-more-photos {
+    height: 100%;
+}
