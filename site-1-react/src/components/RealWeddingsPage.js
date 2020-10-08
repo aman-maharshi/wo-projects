@@ -162,6 +162,8 @@ const Gallery = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: didot-regular, sans-serif;
+    max-width: 1080px;
+    margin: 0 auto;
 `
 
 function RealWeddingsPage() {
