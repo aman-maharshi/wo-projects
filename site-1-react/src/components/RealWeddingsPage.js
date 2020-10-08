@@ -2,9 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import bannerImage from "../images/rw-banner.jpeg"
 import RealWeddingsItem from "./RealWeddingsItem"
-import { RwData } from "./RealWeddingsData"
-
-console.log(RwData.rw1.images.image1)
+import { data } from "./RealWeddingsData"
 
 const Section = styled.div`
     padding: 1rem 3rem;
@@ -195,21 +193,13 @@ function RealWeddingsPage() {
                     </OptionsSort>
                 </Options>
                 <Gallery>
-                    <RealWeddingsItem image1={require("../images/rw-1.jpeg")} image2={require("../images/rw-2.jpeg")} image3={require("../images/rw-3.jpeg")} image4={require("../images/rw-4.jpeg")} count={26} name={"Title One"} place={"Lorem, ipsum"} />
+                    <RealWeddingsItem image1={data.rw1.images.image1} image2={data.rw1.images.image2} image3={data.rw1.images.image3} image4={data.rw1.images.image4} count={26} name={data.rw1.name} place={data.rw1.place} id={"rw1"} />
 
-                    <RealWeddingsItem image1={require("../images/rw-5.jpeg")} image2={require("../images/rw-6.jpeg")} image3={require("../images/rw-7.jpeg")} image4={require("../images/rw-8.jpeg")} count={18} name={"Title Two"} place={"Lorem, ipsum"} />
+                    <RealWeddingsItem image1={data.rw2.images.image1} image2={data.rw2.images.image2} image3={data.rw2.images.image3} image4={data.rw2.images.image4} count={18} name={data.rw2.name} place={data.rw2.place} id={"rw2"}/>
 
-                    <RealWeddingsItem image1={require("../images/rw-9.jpeg")} image2={require("../images/rw-10.jpeg")} image3={require("../images/rw-11.jpeg")} image4={require("../images/rw-12.jpeg")} count={33} name={"Title Three"} place={"Lorem, ipsum"} />
+                    <RealWeddingsItem image1={data.rw3.images.image1} image2={data.rw3.images.image2} image3={data.rw3.images.image3} image4={data.rw3.images.image4} count={33} name={"Title Three"} place={"Lorem, ipsum"} id={"rw3"}/>
 
-                    <RealWeddingsItem image1={require("../images/rw-13.jpeg")} image2={require("../images/rw-14.jpeg")} image3={require("../images/rw-15.jpeg")} image4={require("../images/rw-16.jpeg")} count={12} name={"Title Four"} place={"Lorem, ipsum"} />
-              
-                    <RealWeddingsItem image1={require("../images/rw-1.jpeg")} image2={require("../images/rw-2.jpeg")} image3={require("../images/rw-3.jpeg")} image4={require("../images/rw-4.jpeg")} count={7} name={"Title One"} place={"Lorem, ipsum"} />
-
-                    <RealWeddingsItem image1={require("../images/rw-5.jpeg")} image2={require("../images/rw-6.jpeg")} image3={require("../images/rw-7.jpeg")} image4={require("../images/rw-8.jpeg")} count={15} name={"Title Two"} place={"Lorem, ipsum"} />
-
-                    <RealWeddingsItem image1={require("../images/rw-9.jpeg")} image2={require("../images/rw-10.jpeg")} image3={require("../images/rw-11.jpeg")} image4={require("../images/rw-12.jpeg")} count={9} name={"Title Three"} place={"Lorem, ipsum"} />
-
-                    <RealWeddingsItem image1={require("../images/rw-13.jpeg")} image2={require("../images/rw-14.jpeg")} image3={require("../images/rw-15.jpeg")} image4={require("../images/rw-16.jpeg")} count={11} name={"Title Four"} place={"Lorem, ipsum"} />
+                    <RealWeddingsItem image1={data.rw4.images.image1} image2={data.rw4.images.image2} image3={data.rw4.images.image3} image4={data.rw4.images.image4} count={12} name={"Title Four"} place={"Lorem, ipsum"} id={"rw4"}/>
                 </Gallery>
             </MainContainer>
         </Section>
