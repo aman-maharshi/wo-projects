@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const PhotoItemLarge = styled.div`
     height: 200px;
@@ -11,6 +11,10 @@ const PhotoItemLarge = styled.div`
 
     img {
         width: 100%;
+    }
+
+    :hover {
+        transform: scale(1.2);
     }
 `
 
@@ -28,6 +32,10 @@ const PhotoItemSmall = styled.div`
     .last-image {
         filter: brightness(60%);
     }
+
+    :hover {
+        transform: scale(1.2);
+    }
 `
 
 function RealWeddingsItem({ image1, image2, image3, image4, count, name, place, id }) {
@@ -41,17 +49,17 @@ function RealWeddingsItem({ image1, image2, image3, image4, count, name, place, 
                 </Link>
             </div>
             <div className="rw__item__row2">
-                <a href="/real-weddings/rw-one" className="rw__photo-box">
+                <Link to={`/real-weddings/${id}`} className="rw__photo-box">
                     <PhotoItemSmall>
                         <img src={image2} alt={name} />
                     </PhotoItemSmall>
-                </a>
-                <a href="#/real-weddings/rw-one" className="rw__photo-box">
+                </Link>
+                <Link to={`/real-weddings/${id}`} className="rw__photo-box">
                     <PhotoItemSmall>
                         <img src={image3} alt={name} />
                     </PhotoItemSmall>
-                </a>
-                <a href="/real-weddings/rw-one" className="rw__photo-box rw__photo-count">
+                </Link>
+                <Link to={`/real-weddings/${id}`} className="rw__photo-box rw__photo-count">
                     <PhotoItemSmall>
                         <img src={image4} className="last-image" alt={name} />
                     </PhotoItemSmall>
@@ -59,7 +67,7 @@ function RealWeddingsItem({ image1, image2, image3, image4, count, name, place, 
                         <span>{count}</span>
                         <span>photos</span>
                     </div>
-                </a>
+                </Link>
             </div>
             <div>
                 <p className="rw__item__title">{name}</p>

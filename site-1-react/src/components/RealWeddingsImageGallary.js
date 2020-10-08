@@ -7,40 +7,100 @@ const Section = styled.section`
     padding: 1rem 3rem;
     background: #f3f3f3;
 `
-const SectionTitle = styled.p`
-    text-align: center;
-    font-size: 1.5rem;
-`
 const GallaryContainer = styled.div`
-    border: 1px solid gray;
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1230px;
+    margin: 0 auto;
 `
-const GallaryItem = styled.div`
+const GallaryItemLarge = styled.div`
+    border: 10px solid white;
+    height: 300px;
+    width: 462px;
+    margin: 10px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+`
+
+const GallaryItemSmall = styled.div`
     border: 10px solid white;
     height: 300px;
     width: 300px;
+    margin: 10px;
 
     img {
         width: 100%;
+    }
+
+    .desc {
+        background: white;
+        height: 100%;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .name {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .place {
+            margin-top: 14px;
+            color: gray;
+            font-size: 13px;
+            position: relative;
+        }
     }
 `
 
 function RealWeddingsImageGallary(props) {
     const { id } = useParams()
-    const { image1 } = data[id].images
-    
+    const { image1, image2, image3, image4 } = data[id].images
+
     return (
         <Section>
-            <SectionTitle>Images Gallery</SectionTitle>
             <GallaryContainer>
-                <GallaryItem><img src={image1} alt="abc" /></GallaryItem>
-                <GallaryItem><img src={image1} alt="asdf" /></GallaryItem>
-                <GallaryItem><img src={image1} alt="adsf" /></GallaryItem>
-                <GallaryItem><img src={image1} alt="asdf" /></GallaryItem>
+                <GallaryItemLarge>
+                    <a href="/#">
+                        <img src={image1} alt="abc" />
+                    </a>
+                </GallaryItemLarge>
+                <GallaryItemLarge>
+                    <a href="/#">
+                        <img src={image2} alt="asdf" />
+                    </a>
+                </GallaryItemLarge>
+                <GallaryItemSmall>
+                    <a href="/#">
+                        <img src={image3} alt="abc" />
+                    </a>
+                </GallaryItemSmall>
+                <GallaryItemSmall>
+                    <div className="desc">
+                        <p className="name">{data[id].name}</p>
+                        <p className="place">{data[id].place}</p>
+                    </div>
+                </GallaryItemSmall>
+                <GallaryItemSmall>
+                    <a href="/#">
+                        <img src={image4} alt="abc" />
+                    </a>
+                </GallaryItemSmall>
             </GallaryContainer>
+            
         </Section>
     )
 }
