@@ -45,5 +45,27 @@ export const data = {
         name: "Title Four",
         place: "Lorem, ipsum",
         totalImages: 4
+    },
+    rw5: {
+        images: {
+            image1: require("../images/rw5-1.jpeg"),
+            image2: require("../images/rw5-2.jpeg"),
+            image3: require("../images/rw5-3.jpeg"),
+            image4: require("../images/rw5-4.jpeg")
+        },
+        name: "Title Five",
+        place: "Lorem, ipsum",
+        totalImages: 4
+    },
+    rw6: {
+        images: {
+            image1: require("../images/rw6-1.jpeg"),
+            image2: require("../images/rw6-2.jpeg"),
+            image3: require("../images/rw6-3.jpeg"),
+            image4: require("../images/rw6-4.jpeg")
+        },
+        name: "Title Six",
+        place: "Lorem, ipsum",
+        totalImages: 4
     }
 }
