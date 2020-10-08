@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import bannerImage from "../images/rw-banner.jpeg"
 import RealWeddingsItem from "./RealWeddingsItem"
-// import { RwData } from "./RwData"
+import { RwData } from "./RealWeddingsData"
 
-// console.log(RwData.rw1.images.image1)
+console.log(RwData.rw1.images.image1)
 
 const Section = styled.div`
     padding: 1rem 3rem;
@@ -202,6 +202,14 @@ function RealWeddingsPage() {
                     <RealWeddingsItem image1={require("../images/rw-9.jpeg")} image2={require("../images/rw-10.jpeg")} image3={require("../images/rw-11.jpeg")} image4={require("../images/rw-12.jpeg")} count={33} name={"Title Three"} place={"Lorem, ipsum"} />
 
                     <RealWeddingsItem image1={require("../images/rw-13.jpeg")} image2={require("../images/rw-14.jpeg")} image3={require("../images/rw-15.jpeg")} image4={require("../images/rw-16.jpeg")} count={12} name={"Title Four"} place={"Lorem, ipsum"} />
+              
+                    <RealWeddingsItem image1={require("../images/rw-1.jpeg")} image2={require("../images/rw-2.jpeg")} image3={require("../images/rw-3.jpeg")} image4={require("../images/rw-4.jpeg")} count={7} name={"Title One"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-5.jpeg")} image2={require("../images/rw-6.jpeg")} image3={require("../images/rw-7.jpeg")} image4={require("../images/rw-8.jpeg")} count={15} name={"Title Two"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-9.jpeg")} image2={require("../images/rw-10.jpeg")} image3={require("../images/rw-11.jpeg")} image4={require("../images/rw-12.jpeg")} count={9} name={"Title Three"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-13.jpeg")} image2={require("../images/rw-14.jpeg")} image3={require("../images/rw-15.jpeg")} image4={require("../images/rw-16.jpeg")} count={11} name={"Title Four"} place={"Lorem, ipsum"} />
                 </Gallery>
             </MainContainer>
         </Section>
