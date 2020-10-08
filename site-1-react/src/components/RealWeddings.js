@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { data } from "./RealWeddingsData"
 
 function RealWeddings() {
     return (
@@ -8,106 +9,106 @@ function RealWeddings() {
             <div className="real-weddings__container">
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw1" className="rw__photo-box">
                             <div className="rw__photo1"></div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw1" className="rw__photo-box">
                             <div className="rw__photo2"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box">
+                        </Link>
+                        <Link to="/real-weddings/rw1" className="rw__photo-box">
                             <div className="rw__photo3"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box rw__photo-count">
+                        </Link>
+                        <Link to="/real-weddings/rw1" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo4"></div>
                             <div className="rw__photo-count__box">
-                                <span>26</span>
+                                <span>{data.rw1.totalImages}</span>
                                 <span>photos</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        <p className="rw__item__title">1 Lorem, ipsum.</p>
-                        <p className="rw__item__subtitle">Lorem, ipsum.</p>
+                        <p className="rw__item__title">{data.rw1.name}</p>
+                        <p className="rw__item__subtitle">{data.rw1.place}</p>
                     </div>
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw2" className="rw__photo-box">
                             <div className="rw__photo5"></div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw2" className="rw__photo-box">
                             <div className="rw__photo6"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box">
+                        </Link>
+                        <Link to="/real-weddings/rw2" className="rw__photo-box">
                             <div className="rw__photo7"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box rw__photo-count">
+                        </Link>
+                        <Link to="/real-weddings/rw2" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo8"></div>
                             <div className="rw__photo-count__box">
-                                <span>18</span>
+                                <span>{data.rw2.totalImages}</span>
                                 <span>photos</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        <p className="rw__item__title">2 Lorem, ipsum.</p>
-                        <p className="rw__item__subtitle">Lorem, ipsum.</p>
+                        <p className="rw__item__title">{data.rw2.name}</p>
+                        <p className="rw__item__subtitle">{data.rw2.place}</p>
                     </div>
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw3" className="rw__photo-box">
                             <div className="rw__photo9"></div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw3" className="rw__photo-box">
                             <div className="rw__photo10"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box">
+                        </Link>
+                        <Link to="/real-weddings/rw3" className="rw__photo-box">
                             <div className="rw__photo11"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box rw__photo-count">
+                        </Link>
+                        <Link to="/real-weddings/rw3" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo12"></div>
                             <div className="rw__photo-count__box">
-                                <span>33</span>
+                                <span>{data.rw3.totalImages}</span>
                                 <span>photos</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        <p className="rw__item__title">3 Lorem, ipsum.</p>
-                        <p className="rw__item__subtitle">Lorem, ipsum.</p>
+                        <p className="rw__item__title">{data.rw3.name}</p>
+                        <p className="rw__item__subtitle">{data.rw3.place}</p>
                     </div>
                 </div>
                 <div className="rw__item">
                     <div className="rw__item__row1">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw4" className="rw__photo-box">
                             <div className="rw__photo13"></div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="rw__item__row2">
-                        <a href="/#" className="rw__photo-box">
+                        <Link to="/real-weddings/rw4" className="rw__photo-box">
                             <div className="rw__photo14"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box">
+                        </Link>
+                        <Link to="/real-weddings/rw4" className="rw__photo-box">
                             <div className="rw__photo15"></div>
-                        </a>
-                        <a href="/#" className="rw__photo-box rw__photo-count">
+                        </Link>
+                        <Link to="/real-weddings/rw4" className="rw__photo-box rw__photo-count">
                             <div className="rw__photo16"></div>
                             <div className="rw__photo-count__box">
-                                <span>12</span>
+                                <span>{data.rw4.totalImages}</span>
                                 <span>photos</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        <p className="rw__item__title">4 Lorem, ipsum.</p>
-                        <p className="rw__item__subtitle">Lorem, ipsum.</p>
+                        <p className="rw__item__title">{data.rw4.name}</p>
+                        <p className="rw__item__subtitle">{data.rw4.place}</p>
                     </div>
                 </div>
             </div>

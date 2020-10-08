@@ -131,9 +131,6 @@ function RealWeddingsImageGallary(props) {
                     </a>
                 </GallaryItemSmall>
             </GallaryContainer>
-
-            {/*
-
             {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn>}
 
             {image7 ? (
@@ -156,9 +153,7 @@ function RealWeddingsImageGallary(props) {
                 </NewGallaryContainer>
             ) : (
                 ""
-            )
-
-            */}
+            )}
         </Section>
     )
 }
