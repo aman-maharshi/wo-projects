@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import bannerImage from "../images/rw-banner.jpeg"
+import RealWeddingsItem from "./RealWeddingsItem"
+// import { RwData } from "./RwData"
+
+// console.log(RwData.rw1.images.image1)
 
 const Section = styled.div`
     padding: 1rem 3rem;
@@ -154,6 +158,14 @@ const OptionsSort = styled.div`
     }
 `
 
+const Gallery = styled.div`
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: didot-regular, sans-serif;
+`
+
 function RealWeddingsPage() {
     return (
         <Section>
@@ -182,6 +194,15 @@ function RealWeddingsPage() {
                         </a>
                     </OptionsSort>
                 </Options>
+                <Gallery>
+                    <RealWeddingsItem image1={require("../images/rw-1.jpeg")} image2={require("../images/rw-2.jpeg")} image3={require("../images/rw-3.jpeg")} image4={require("../images/rw-4.jpeg")} count={26} name={"Title One"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-5.jpeg")} image2={require("../images/rw-6.jpeg")} image3={require("../images/rw-7.jpeg")} image4={require("../images/rw-8.jpeg")} count={18} name={"Title Two"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-9.jpeg")} image2={require("../images/rw-10.jpeg")} image3={require("../images/rw-11.jpeg")} image4={require("../images/rw-12.jpeg")} count={33} name={"Title Three"} place={"Lorem, ipsum"} />
+
+                    <RealWeddingsItem image1={require("../images/rw-13.jpeg")} image2={require("../images/rw-14.jpeg")} image3={require("../images/rw-15.jpeg")} image4={require("../images/rw-16.jpeg")} count={12} name={"Title Four"} place={"Lorem, ipsum"} />
+                </Gallery>
             </MainContainer>
         </Section>
     )
