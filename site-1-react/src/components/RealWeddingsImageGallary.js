@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { useParams } from "react-router-dom"
 import { data } from "./RealWeddingsData"
+import { Link } from "react-router-dom"
 
 const Section = styled.section`
     padding: 1rem 3rem;
@@ -114,19 +115,19 @@ function RealWeddingsImageGallary(props) {
         <Section>
             <GallaryContainer>
                 <GallaryItemLarge>
-                    <a href="/#">
+                    <Link to={`/real-weddings/${id}`}>
                         <img src={image1} alt="abc" />
-                    </a>
+                    </Link>
                 </GallaryItemLarge>
                 <GallaryItemLarge>
-                    <a href="/#">
+                    <Link to={`/real-weddings/${id}`}>
                         <img src={image2} alt="asdf" />
-                    </a>
+                    </Link>
                 </GallaryItemLarge>
                 <GallaryItemSmall>
-                    <a href="/#">
+                    <Link to={`/real-weddings/${id}`}>
                         <img src={image3} alt="abc" />
-                    </a>
+                    </Link>
                 </GallaryItemSmall>
                 <GallaryItemSmall>
                     <div className="desc">
@@ -135,9 +136,9 @@ function RealWeddingsImageGallary(props) {
                     </div>
                 </GallaryItemSmall>
                 <GallaryItemSmall>
-                    <a href="/#">
+                    <Link to={`/real-weddings/${id}`}>
                         <img src={image4} alt="abc" />
-                    </a>
+                    </Link>
                 </GallaryItemSmall>
             </GallaryContainer>
 
@@ -150,9 +151,9 @@ function RealWeddingsImageGallary(props) {
                     {hiddenImages.map((item, index) => {
                         return (
                             <GallaryItemSmall key={index}>
-                                <a href="/#">
+                                <Link to={`/real-weddings/${id}`}>
                                     <img src={item} alt={index} />
-                                </a>
+                                </Link>
                             </GallaryItemSmall>
                         )
                     })}
