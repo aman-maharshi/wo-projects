@@ -29,6 +29,7 @@ const GallaryItemLarge = styled.div`
     img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
 
         &:hover {
             opacity: 0.7;
