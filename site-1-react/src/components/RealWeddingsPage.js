@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import bannerImage from "../images/rw-banner.jpeg"
 import RealWeddingsItem from "./RealWeddingsItem"
@@ -169,6 +169,10 @@ const Gallery = styled.div`
 `
 
 function RealWeddingsPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <Section>
             <MainContainer>

@@ -116,17 +116,17 @@ function RealWeddingsImageGallary(props) {
         <Section>
             <GallaryContainer>
                 <GallaryItemLarge>
-                    <Link to={`/real-weddings/${id}`}>
+                    <Link to={`/real-weddings/${id}`} replace>
                         <img src={image1} alt="abc" />
                     </Link>
                 </GallaryItemLarge>
                 <GallaryItemLarge>
-                    <Link to={`/real-weddings/${id}`}>
+                    <Link to={`/real-weddings/${id}`} replace>
                         <img src={image2} alt="asdf" />
                     </Link>
                 </GallaryItemLarge>
                 <GallaryItemSmall>
-                    <Link to={`/real-weddings/${id}`}>
+                    <Link to={`/real-weddings/${id}`} replace>
                         <img src={image3} alt="abc" />
                     </Link>
                 </GallaryItemSmall>
@@ -137,13 +137,11 @@ function RealWeddingsImageGallary(props) {
                     </div>
                 </GallaryItemSmall>
                 <GallaryItemSmall>
-                    <Link to={`/real-weddings/${id}`}>
+                    <Link to={`/real-weddings/${id}`} replace>
                         <img src={image4} alt="abc" />
                     </Link>
                 </GallaryItemSmall>
             </GallaryContainer>
-
-            {/*
 
             {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : data[id].totalImages > 4 ? <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn> : ""}
 
@@ -152,7 +150,7 @@ function RealWeddingsImageGallary(props) {
                     {hiddenImages.map((item, index) => {
                         return (
                             <GallaryItemSmall key={index}>
-                                <Link to={`/real-weddings/${id}`}>
+                                <Link to={`/real-weddings/${id}`} replace>
                                     <img src={item} alt={index} />
                                 </Link>
                             </GallaryItemSmall>
@@ -162,8 +160,6 @@ function RealWeddingsImageGallary(props) {
             ) : (
                 ""
             )}
-
-            */}
         </Section>
     )
 }
