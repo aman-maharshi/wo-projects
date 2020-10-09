@@ -99,6 +99,7 @@ const Options = styled.div`
         padding: 1rem 0;
     }
 `
+/*
 const OptionsLocation = styled.div`
     text-transform: uppercase;
     font-weight: 500;
@@ -155,6 +156,7 @@ const OptionsSort = styled.div`
         color: black;
     }
 `
+*/
 
 const Gallery = styled.div`
     padding: 2rem 0;
@@ -176,7 +178,7 @@ function RealWeddingsPage() {
                         <BannerTextSubtitle>Lorem ipsum dolor sit amet, consectetur adipisicing.</BannerTextSubtitle>
                     </BannerText>
                 </Banner>
-                <Options>
+                <Options>{/*
                     <OptionsLocation>
                         By Location:
                         <select name="location-select" className="location-select">
@@ -193,7 +195,7 @@ function RealWeddingsPage() {
                             Recent
                         </a>
                     </OptionsSort>
-                </Options>
+                    */}</Options>
                 <Gallery>
                     <RealWeddingsItem image1={data.rw1.images.image1} image2={data.rw1.images.image2} image3={data.rw1.images.image3} image4={data.rw1.images.image4} count={data.rw1.totalImages} name={data.rw1.name} place={data.rw1.place} id={"rw1"} />
 

@@ -11,6 +11,7 @@ const PhotoItemLarge = styled.div`
 
     img {
         width: 100%;
+        height: 100%;
     }
 
     :hover {
@@ -27,6 +28,7 @@ const PhotoItemSmall = styled.div`
 
     img {
         width: 100%;
+        height: 100%;
     }
 
     .last-image {

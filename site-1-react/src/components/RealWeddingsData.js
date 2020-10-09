@@ -30,13 +30,11 @@ export const data = {
             image2: require("../images/rw3-2.jpeg"),
             image3: require("../images/rw3-3.jpeg"),
             image4: require("../images/rw3-4.jpeg"),
-            image5: require("../images/rw6-1.jpeg"),
-            image6: require("../images/rw6-2.jpeg"),
-            image7: require("../images/rw6-3.jpeg"),
+            image5: require("../images/rw6-1.jpeg")
         },
         name: "Title Three",
         place: "Lorem, ipsum",
-        totalImages: 7
+        totalImages: 5
     },
     rw4: {
         images: {
@@ -65,13 +63,10 @@ export const data = {
             image1: require("../images/rw6-1.jpeg"),
             image2: require("../images/rw6-2.jpeg"),
             image3: require("../images/rw6-3.jpeg"),
-            image4: require("../images/rw6-4.jpeg"),
-            image5: require("../images/rw1-5.jpeg"),
-            image6: require("../images/rw1-6.jpeg"),
-            image7: require("../images/rw1-7.jpeg")
+            image4: require("../images/rw6-4.jpeg")
         },
         name: "Title Six",
         place: "Lorem, ipsum",
-        totalImages: 7
+        totalImages: 4
     }
 }

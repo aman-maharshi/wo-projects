@@ -28,6 +28,10 @@ const GallaryItemLarge = styled.div`
     img {
         height: 100%;
         width: 100%;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 `
 
@@ -39,6 +43,10 @@ const GallaryItemSmall = styled.div`
 
     img {
         width: 100%;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     .desc {
@@ -85,8 +93,9 @@ const NewGallaryContainer = styled.div`
 
 function RealWeddingsImageGallary(props) {
     const { id } = useParams()
-    const { image1, image2, image3, image4, image5, image6, image7 } = data[id].images
-
+    const { image1, image2, image3, image4 } = data[id].images
+    const allImages = Object.values(data[id].images)
+    const hiddenImages = allImages.splice(4, allImages.length)
     const [showMoreImages, setShowMoreImages] = useState(false)
 
     function handleLoadMore() {
@@ -131,29 +140,28 @@ function RealWeddingsImageGallary(props) {
                     </a>
                 </GallaryItemSmall>
             </GallaryContainer>
-            {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn>}
 
-            {image7 ? (
+            {/*
+
+            {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : data[id].totalImages > 4 ? <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn> : ""}
+
+            {data[id].totalImages > 4 ? (
                 <NewGallaryContainer className="new-gallary-container">
-                    <GallaryItemSmall>
-                        <a href="/#">
-                            <img src={image5} alt="abc" />
-                        </a>
-                    </GallaryItemSmall>
-                    <GallaryItemSmall>
-                        <a href="/#">
-                            <img src={image6} alt="abc" />
-                        </a>
-                    </GallaryItemSmall>
-                    <GallaryItemSmall>
-                        <a href="/#">
-                            <img src={image7} alt="abc" />
-                        </a>
-                    </GallaryItemSmall>
+                    {hiddenImages.map((item, index) => {
+                        return (
+                            <GallaryItemSmall key={index}>
+                                <a href="/#">
+                                    <img src={item} alt={index} />
+                                </a>
+                            </GallaryItemSmall>
+                        )
+                    })}
                 </NewGallaryContainer>
             ) : (
                 ""
             )}
+
+            */}
         </Section>
     )
 }
