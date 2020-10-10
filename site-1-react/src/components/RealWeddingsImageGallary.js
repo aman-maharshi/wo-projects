@@ -191,11 +191,15 @@ function RealWeddingsImageGallary(props) {
             {isOpen && 
                 <Lightbox 
                     mainSrc={LBImages[photoIndex]} 
+                    /*
                     nextSrc={LBImages[(photoIndex + 1) % LBImages.length]} 
                     prevSrc={LBImages[(photoIndex + LBImages.length - 1) % LBImages.length]} 
+                    */
                     onCloseRequest={() => setIsOpen(false)} 
+                    /*
                     onMovePrevRequest={() => setPhotoIndex((photoIndex + LBImages.length - 1) % LBImages.length)} 
                     onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % LBImages.length)} 
+                    */
                 />
             }
         </Section>
