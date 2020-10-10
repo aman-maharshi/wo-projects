@@ -155,6 +155,9 @@
     letter-spacing: 1px;
 }
 @media (max-width: 768px) {
+    .venue__row-2-left {
+        min-width: auto;
+    }
     .venue__row-2 {
         flex-direction: column;
     }
