@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { useParams } from "react-router-dom"
 import { data } from "./RealWeddingsData"
 import { Link } from "react-router-dom"
+import Lightbox from "react-image-lightbox"
+import "react-image-lightbox/style.css"
 
 const Section = styled.section`
     padding: 1rem 3rem;
@@ -112,11 +114,16 @@ function RealWeddingsImageGallary(props) {
         setShowMoreImages(false)
     }
 
+    /* LightBox Specific Variables and States */
+    const LBImages = [image1, image2, image3, image4]
+    const [photoIndex, setPhotoIndex] = useState(0)
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <Section>
             <GallaryContainer>
                 <GallaryItemLarge>
-                    <Link to={`/real-weddings/${id}`} replace>
+                    <Link onClick={() => setIsOpen(true)} to={`/real-weddings/${id}`} replace>
                         <img src={image1} alt="abc" />
                     </Link>
                 </GallaryItemLarge>
@@ -143,8 +150,14 @@ function RealWeddingsImageGallary(props) {
                 </GallaryItemSmall>
             </GallaryContainer>
 
-            {showMoreImages ? <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : data[id].totalImages > 4 ? <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn> : ""}
+            {/* SHOW MORE PHOTOS BUTTON */}
+            {showMoreImages ? 
+                <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : 
+                data[id].totalImages > 4 ? 
+                <LoadMoreBtn onClick={handleLoadMore}>&#11015; See More Photos</LoadMoreBtn> : 
+                ""}
 
+            {/* SHOW REMAINING PHOTOS   */}
             {data[id].totalImages > 4 ? (
                 <NewGallaryContainer className="new-gallary-container">
                     {hiddenImages.map((item, index) => {
@@ -160,6 +173,18 @@ function RealWeddingsImageGallary(props) {
             ) : (
                 ""
             )}
+            
+            {/* PHOTOS LIGHTBOX */}
+            {isOpen && 
+                <Lightbox 
+                    mainSrc={LBImages[photoIndex]} 
+                    nextSrc={LBImages[(photoIndex + 1) % LBImages.length]} 
+                    prevSrc={LBImages[(photoIndex + LBImages.length - 1) % LBImages.length]} 
+                    onCloseRequest={() => setIsOpen(false)} 
+                    onMovePrevRequest={() => setPhotoIndex((photoIndex + LBImages.length - 1) % LBImages.length)} 
+                    onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % LBImages.length)} 
+                />
+            }
         </Section>
     )
 }
