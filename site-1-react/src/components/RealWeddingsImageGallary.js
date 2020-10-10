@@ -1,8 +1,9 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { useParams } from "react-router-dom"
 import { data } from "./RealWeddingsData"
 import { Link } from "react-router-dom"
+
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
 
@@ -102,6 +103,10 @@ function RealWeddingsImageGallary(props) {
     const hiddenImages = allImages.splice(4, allImages.length)
     const [showMoreImages, setShowMoreImages] = useState(false)
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     function handleLoadMore() {
         if (document.querySelector(".new-gallary-container")) {
             document.querySelector(".new-gallary-container").classList.add("show-more-photos")
@@ -115,25 +120,33 @@ function RealWeddingsImageGallary(props) {
     }
 
     /* LightBox Specific Variables and States */
-    const LBImages = [image1, image2, image3, image4]
+    let LBImages = [image1, image2, image3, image4]
     const [photoIndex, setPhotoIndex] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
+    if(showMoreImages) {
+        LBImages = Object.values(data[id].images)
+    }
+
+    function handleImageClick(location) {
+        setIsOpen(true)
+        setPhotoIndex(location)
+    }
 
     return (
         <Section>
             <GallaryContainer>
                 <GallaryItemLarge>
-                    <Link onClick={() => setIsOpen(true)} to={`/real-weddings/${id}`} replace>
+                    <Link onClick={() => handleImageClick(0)} to={`/real-weddings/${id}`} replace>
                         <img src={image1} alt="abc" />
                     </Link>
                 </GallaryItemLarge>
                 <GallaryItemLarge>
-                    <Link to={`/real-weddings/${id}`} replace>
+                    <Link onClick={() => handleImageClick(1)} to={`/real-weddings/${id}`} replace>
                         <img src={image2} alt="asdf" />
                     </Link>
                 </GallaryItemLarge>
                 <GallaryItemSmall>
-                    <Link to={`/real-weddings/${id}`} replace>
+                    <Link onClick={() => handleImageClick(2)} to={`/real-weddings/${id}`} replace>
                         <img src={image3} alt="abc" />
                     </Link>
                 </GallaryItemSmall>
@@ -144,13 +157,13 @@ function RealWeddingsImageGallary(props) {
                     </div>
                 </GallaryItemSmall>
                 <GallaryItemSmall>
-                    <Link to={`/real-weddings/${id}`} replace>
+                    <Link onClick={() => handleImageClick(3)} to={`/real-weddings/${id}`} replace>
                         <img src={image4} alt="abc" />
                     </Link>
                 </GallaryItemSmall>
             </GallaryContainer>
 
-            {/* SHOW MORE PHOTOS BUTTON */}
+            {/* SHOW MORE PHOTOS or LESS PHOTOS BUTTON */}
             {showMoreImages ? 
                 <LoadMoreBtn onClick={handleLoadLess}>&#11014; Less Photos</LoadMoreBtn> : 
                 data[id].totalImages > 4 ? 
@@ -163,7 +176,7 @@ function RealWeddingsImageGallary(props) {
                     {hiddenImages.map((item, index) => {
                         return (
                             <GallaryItemSmall key={index}>
-                                <Link to={`/real-weddings/${id}`} replace>
+                                <Link onClick={() => handleImageClick(index + 4)}  to={`/real-weddings/${id}`} replace>
                                     <img src={item} alt={index} />
                                 </Link>
                             </GallaryItemSmall>
