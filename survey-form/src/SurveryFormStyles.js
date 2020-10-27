@@ -5,6 +5,7 @@ const Section = styled.div`
     max-width: 1230px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Lato", sans-serif;
 
     .step-indicator {
         text-align: center;

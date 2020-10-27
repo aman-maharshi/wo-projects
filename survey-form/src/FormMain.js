@@ -1,5 +1,13 @@
 import React from "react"
+
 import StepOne from "./components/StepOne"
+import StepTwo from "./components/StepTwo"
+import StepThree from "./components/StepThree"
+import StepFour from "./components/StepFour"
+import StepFive from "./components/StepFive"
+import StepSix from "./components/StepSix"
+import StepSeven from "./components/StepSeven"
+import StepEight from "./components/StepEight"
 
 class FormMain extends React.Component {
     state = {
@@ -69,6 +77,20 @@ class FormMain extends React.Component {
         switch (step) {
             case 1:
                 return <StepOne values={values} nextStep={this.nextStep} handleUserInputChange={this.handleUserInputChange} />
+            case 2:
+                return <StepTwo values={values} nextStep={this.nextStep} />
+            case 3:
+                return <StepThree values={values} nextStep={this.nextStep} previousStep={this.previousTwoStep} handleUserInputChange={this.handleUserInputChange} />
+            case 4:
+                return <StepFour values={values} nextStep={this.nextStep} previousStep={this.previousStep} handleUserInputChange={this.handleUserInputChange} />
+            case 5:
+                return <StepFive values={values} nextStep={this.nextStep} previousStep={this.previousStep} handleUserInputChange={this.handleUserInputChange} />
+            case 6:
+                return <StepSix values={values} nextStep={this.nextStep} previousStep={this.previousStep} handleUserInputChange={this.handleUserInputChange} />
+            case 7:
+                return <StepSeven values={values} nextStep={this.nextStep} previousStep={this.previousStep} handleUserInputChange={this.handleUserInputChange} />
+            case 8:
+                return <StepEight values={values} previousStep={this.previousStep} handleVendors={this.handleVendors} />
         }
     }
 }
